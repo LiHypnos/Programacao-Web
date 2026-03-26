@@ -11,14 +11,22 @@
   position: relative;
 }
 
-.nota {
+.note {
   width: 80%;
   height: 20px;
   background: cyan;
   position: absolute;
   top: 0;
   left: 10%;
-  animation: cair 2s linear;
+  animation: fall 2s linear;
+}
+
+.startG {
+  width: 80%;
+  height: 20px;
+  background: purple;
+  position: absolute;
+  justify-content: center;
 }
 
 @keyframes fall {
