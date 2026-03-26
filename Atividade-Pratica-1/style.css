@@ -1,0 +1,28 @@
+.game {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  border: 2px solid white;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.nota {
+  width: 80%;
+  height: 20px;
+  background: cyan;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  animation: cair 2s linear;
+}
+
+@keyframes fall {
+  to {
+    top: 90%;
+  }
+}
