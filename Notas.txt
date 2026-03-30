@@ -1,0 +1,5 @@
+- Arrumar problema com as notas (as vezes não conta que pressionou a tecla quando
+pressiona duas em um periodo muito proximo)
+- Melhorar a assertividade
+- Melhorar o visual
+- Arrumar a linha de acerto
