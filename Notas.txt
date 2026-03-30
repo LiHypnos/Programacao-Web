@@ -3,3 +3,4 @@ pressiona duas em um periodo muito proximo)
 - Melhorar a assertividade
 - Melhorar o visual
 - Arrumar a linha de acerto
+- BUG: as notas param de cair depois de um tempo
