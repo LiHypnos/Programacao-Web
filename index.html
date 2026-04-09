@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.✦ ݁˖Dance-Click.✦ ݁˖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>&#9733;Dance Click&#9733;</h1>
+
+    <select id="songSelector"></select>
+    <button id="startG" onclick="startGame()">!PLAY!</button>
+
+    <p id="score">Score: 0 | Combo: 0</p>
+    <p id="feedback"></p>
+
+    <div class="container">
+
+        <div class="game" id="game" style="display: none;">
+            <div class="hit-line"></div>
+
+            <div class="column" data-key="a"><span>A</span></div>
+            <div class="column" data-key="s"><span>S</span></div>
+            <div class="column" data-key="d"><span>D</span></div>
+            <div class="column" data-key="f"><span>F</span></div>
+        </div>
+
+        <div class="ranking-box">
+            <h3>Ranking</h3>
+            <ul id="ranking"></ul>
+        </div>
+
+    </div>
+    <!-- tela final -->
+    <div id="endScreen" style="display:none;">
+        <h2>Fim de jogo!</h2>
+        <p id="finalScore"></p>
+        <button onclick="startGame()">Jogar novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

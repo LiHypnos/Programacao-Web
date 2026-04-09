@@ -1,0 +1,129 @@
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.game {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid gray;
+  position: relative;
+  overflow: hidden;
+}
+
+.column span {
+  position: absolute;
+  /* posiciona o label da tecla logo abaixo da hit-line */
+  bottom: calc(15% - 30px);
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  opacity: 0.4;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* hit-line a 85% da altura (de cima) = 15% do fundo */
+.hit-line {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  height: 4px;
+  background: red;
+  z-index: 2;
+  box-shadow: 0 0 8px red, 0 0 2px #f88;
+}
+
+/* nota normal */
+.note {
+  width: 80%;
+  height: 22px;
+  background: cyan;
+  position: absolute;
+  top: -30px;         /* começa acima do jogo */
+  left: 10%;
+  border-radius: 4px;
+  box-shadow: 0 0 6px cyan;
+  z-index: 1;
+  /* cai de top:-30px até top:85% (hit-line) em FALL_DURATION_MS */
+  animation: fall 2s linear forwards;
+}
+
+/* nota longa
+.long-note {
+  background: linear-gradient(180deg, #ff9800, #ffcc00);
+  box-shadow: 0 0 8px #ff9800;
+  border-radius: 4px 4px 2px 2px;
+}
+*/
+/* feedback visual quando nota longa está sendo segurada */
+.hold-active {
+  box-shadow: 0 0 18px #ff0, 0 0 6px #fff;
+  filter: brightness(1.4);
+}
+
+#startG {
+  width: 120px;
+  height: 40px;
+  background: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.ranking-box {
+  width: 200px;
+  text-align: left;
+}
+
+#endScreen {
+  margin-top: 20px;
+}
+
+/* cores das grades */
+.grade-SSS {
+  color: #ff00ff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff00ff;
+}
+
+.grade-S {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.grade-A {
+  color: #00ffcc;
+}
+
+.grade-B {
+  color: #4caf50;
+}
+
+.grade-C {
+  color: #aaa;
+}
+
+/* CRITICAL: a animação vai de top:-30px até top:85%
+   Isso faz a nota chegar na hit-line (bottom:15% = top:85%) exatamente
+   no fim dos 2s — em sincronia com FALL_DURATION_MS=2000 no JS. */
+@keyframes fall {
+  from { top: -30px; }
+  to   { top: 85%; }
+}
