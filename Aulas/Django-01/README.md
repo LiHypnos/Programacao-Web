@@ -540,7 +540,7 @@ Crie o arquivo `myapp/templates/testeparametros.html` com o conteúdo:
     <p>Exemplo com tags para condicional:</p>
     {% if condicional == 1 %}
         <b>Programação</b>
-    {% elif condicional == 2 %}
+    {% elsif condicional == 2 %}
         <b>Web</b>
     {% else %}
         <b>UFLA</b>
