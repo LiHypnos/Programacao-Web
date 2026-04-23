@@ -89,7 +89,7 @@ Aplicar na prática os conceitos da disciplina:
 
 O jogo está disponível via GitHub Pages:
 
-👉 [https://lihypnos.github.io/Atividade-Pratica-1/](https://lihypnos.github.io/Atividade-Pratica-1/)
+👉 [https://lihypnos.github.io/Programacao-Web/Atividade-Pratica-1/](https://lihypnos.github.io/Programacao-Web/Atividade-Pratica-1/)
 
 > ⚠️ Caso não carregue diretamente, verifique o caminho correto do projeto dentro do repositório.
 
