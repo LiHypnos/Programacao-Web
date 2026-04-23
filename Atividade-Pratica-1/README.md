@@ -1,5 +1,3 @@
----
-
 # 🎮 Dance Click
 
 ### GAC116 - Programação Web (2026/1)
